@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700&family=Oswald:wght@400;500;600;700&family=Poppins&family=Roboto:ital,wght@0,300;0,400;1,100;1,400&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+@layer components{
+   
+    .btn {
+        @apply inline-block text-sm  py-3 px-8  cursor-pointer rounded-md ease-linear duration-200   capitalize text-center
+    }
+
+    .btn-primary{
+        @apply text-black bg-secondaryColor  opacity-75
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@layer base{
+
+html{
+    @apply scroll-smooth
+}
+    
+    body{
+        @apply  overflow-hidden tracking-wider text-whiteColor font-dmsans bg-primaryColor ;
+    } bg-primaryColor
+
+    section {
+        @apply pt-16 pb-4 md:pt-20;
+    }
+}
+
+@layer utilities {
+    
+    .home--title,
+    .card--title,
+    .section--title{
+        @apply text-4xl font-bold uppercase lg:text-6xl font-oswald;
+    }
+    
+.section--title {
+    @apply text-3xl
+}
+    
+    .card--title{
+        @apply text-xl
+    }
+
+    .seperator{
+        @apply h-1 my-5 w-44 bg-secondaryColor;
+    }
+
+    .paragraph{
+        @apply text-paragraphColor leading-5 text-xs
+    }
+
+    foot{
+        @apply px-3 !important
+    }
+}
+
+
+.tabs-wrap ul li:hover,
+.tabs-wrap ul li.active{
+    @apply bg-secondaryColor text-blackColor;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
